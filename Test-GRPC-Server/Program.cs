@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Test_GRPC_Server;
+using TestGRPC.Server;
 
 
 Host.CreateDefaultBuilder(args)
