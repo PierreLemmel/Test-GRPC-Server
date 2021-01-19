@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Protobuf Include="Protos\onetoone.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\serverside.proto" GrpcServices="Server" />
   </ItemGroup>
 
 </Project>
