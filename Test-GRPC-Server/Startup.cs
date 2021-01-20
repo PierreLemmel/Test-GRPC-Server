@@ -26,8 +26,9 @@ namespace TestGRPC.Server
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<ServerSideService>();
                 endpoints.MapGrpcService<OneToOneService>();
+                endpoints.MapGrpcService<ServerSideService>();
+                endpoints.MapGrpcService<ClientSideService>();
 
                 endpoints.MapGet("/", async context => await context
                             .Response
