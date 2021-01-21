@@ -12,6 +12,8 @@ namespace TestGRPC.Server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGrpc();
+
+            services.AddSingleton<ChatDispatcher>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -29,6 +31,7 @@ namespace TestGRPC.Server
                 endpoints.MapGrpcService<OneToOneService>();
                 endpoints.MapGrpcService<ServerSideService>();
                 endpoints.MapGrpcService<ClientSideService>();
+                endpoints.MapGrpcService<ChatService>();
 
                 endpoints.MapGet("/", async context => await context
                             .Response

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "TestGRPC.Server.Protos";
 
-package onetoone;
+package testGRPC;
 
 service OneToOne {
 	rpc AddNumbers (AddNumbersRequest) returns (AddNumbersResponse);

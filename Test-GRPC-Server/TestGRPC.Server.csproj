@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Protos\chat.proto" />
     <None Remove="Protos\clientside.proto" />
   </ItemGroup>
 
@@ -15,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Protobuf Include="Protos\chat.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\onetoone.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\clientside.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\serverside.proto" GrpcServices="Server" />
